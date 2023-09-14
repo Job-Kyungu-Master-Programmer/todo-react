@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/todo-react/static/css/main.c931ce54.css",
+    "main.js": "/todo-react/static/js/main.415fa26e.js",
+    "static/media/Task-pana.svg": "/todo-react/static/media/Task-pana.754d676f57f26c85a39d3bd196c829c1.svg",
+    "static/media/img4.avif": "/todo-react/static/media/img4.7d623cc0279cfad5a301.avif",
+    "static/media/img3.avif": "/todo-react/static/media/img3.b1b50fc2d3d97eea3c4f.avif",
+    "static/media/img1.avif": "/todo-react/static/media/img1.2e5a782bfa02f072a767.avif",
+    "static/media/img6.avif": "/todo-react/static/media/img6.d3a19c37819c3a646869.avif",
+    "static/media/img5.avif": "/todo-react/static/media/img5.4f6e9cd5dd603b8dba57.avif",
+    "static/media/img2.avif": "/todo-react/static/media/img2.f3b1ea9365e4b73de696.avif",
+    "index.html": "/todo-react/index.html",
+    "static/media/heart.svg": "/todo-react/static/media/heart.493a73a15980f74d29eb86ab43ded16f.svg",
+    "main.c931ce54.css.map": "/todo-react/static/css/main.c931ce54.css.map",
+    "main.415fa26e.js.map": "/todo-react/static/js/main.415fa26e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c931ce54.css",
+    "static/js/main.415fa26e.js"
+  ]
+}
