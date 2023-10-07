@@ -7,7 +7,6 @@ article {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     background: rgb(135, 135, 255);
-    background:red;
     max-width: 100%;
     height: 100vh;
     font-size: .91vw;
@@ -43,7 +42,84 @@ article {
     font-size: calc(.0 * 0vw + 4.5em)
    }
 
+  // Header Todo
+
+  &__head {
+     position: relative;
+     margin-bottom: 2.3em;
+     padding: 1.41em .4em .55em .4em;
+     border-radius: .55em;
+    //  background: rgba(0, 128, 0, 0.183);
+     background: rgba(135, 135, 255, 0.098);
+    //  background: rgb(135, 135, 255);
+
+     &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+     }
+
+     &__icon {
+        position: relative;
+        font-size: 1.8em;
+        color: rgb(114, 114, 249);
+    }
+    
+    &-ico {
+        // transition: color;
+     }
+
+     .count {
+         position: absolute;
+         top: -.5em;
+         left: 1em;
+         font-size: .65em;
+         color: red;
+        //  color: black;
+        }
+
+        &__title {
+            font-size: 1.8em;
+            font-weight: 500;
+            color: black;
+        }
+        
+        &__btn-search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: rgb(127, 127, 248);
+     }
+
+     &__inputs {
+        width: 100%;
+        display: none;
+        // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+     }
+
+     &__input {
+        border-radius: .5em;
+        border: 0;
+        outline: 0;
+        font-size: 1.2em;
+        padding: .65em 1em;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        
+        &::placeholder {
+            color: rgba(127, 127, 248, 0.367);
+        }
+     }
+  }
+
   &__title {
+            display: none;
             margin-bottom: 1em;
             font-size: 1.8em;
             font-weight: 500;
@@ -117,7 +193,7 @@ article {
 
     &__items {
         padding: .5em;
-        height: 30em;
+        height: 24.2em;
         overflow-y: scroll;
 
         &::-webkit-scrollbar {
@@ -138,18 +214,43 @@ article {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
         border-radius: .5em;
         max-width: 100%;
         background-color: white;
+        // border: 2px solid red;
+        // height: 
 
         &:last-child {
             margin-bottom: 0;
         }
     }
 
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 1em;
+        // background: red;
+        width: 22em;
+    }
+
+    &__priority {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: .65em;
+        height: 100%;
+        border-radius: .5em 0 0 .5em;
+        // background: rgb(12, 201, 12);
+    }
+
     &__content {
+        display: block;
         font-size: 1em;
         padding: 0 .5em 0 1em;
+        // background: green;
+        // width: 11em;
     }
 
     &__icons {
@@ -201,4 +302,134 @@ article {
         }
     }
 
+    .menu {
+        margin-top: .5em;
+        padding-top: .4em;
+        border-top: 1px dotted rgb(218, 218, 218);
+        width: 100%;
+    }
+
+    &__menu {
+        display: flex;
+        background-color: transparent;
+        z-index: 2;
+        border-radius: .3em;
+        width: 100%;
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            margin-right: 1em;
+            padding: .5em .5em;
+            font-weight: 500;
+            cursor: pointer;
+            outline: 0;
+            border: 0;
+            border-radius: .3em;
+            color: rgb(107, 107, 251);
+            // background-color: rgba(114, 114, 249, 0.125);
+            background-color: rgba(114, 114, 249, 0.914);
+            color: white;
+            transition: background-color .3s ease-in-out;
+
+            &:hover {
+                opacity: .85;
+                .list__menu__icon {
+                    color: rgb(224, 224, 224);
+                }
+            }
+        }
+
+        &__icon {
+            margin-left: 1em;
+            font-size: 1.4em;
+            transition: color .2s linear;
+        }
+
+        &-open {
+            font-size: 1.18em;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+            color: rgb(107, 107, 251);
+            font-weight: 900;
+            // background: green;
+        }
+    }
+
 }
+//WELCOM 
+.welcom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.341);
+
+    &__blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .9em;
+    width: 30.65em;
+    height: 52.5em;
+    background: rgb(255, 255, 255);
+    background: rgb(239, 239, 239);
+    }
+
+    &__icon {
+        padding: .2em;
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: .5em;
+        font-size: 1.7em;
+        background-color: rgb(114, 114, 249);
+        box-shadow: 1px 8px 4px 1px rgb(175, 175, 175);
+        color: white;
+    }
+
+    &__sb {
+        margin-bottom: 1em;
+        font-size: 1.9em;
+        font-style: italic;
+        color: rgb(141, 141, 141);
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 1em;
+        font-size: 2.3em;
+    }
+
+    &__content {
+        margin-bottom: 2em;
+        line-height: 150%;
+        text-align: center;
+        font-size: 1.1em;
+        max-width: 75%;
+    }
+
+    &__img {
+        width: 6em;
+        height: 6em;
+    }
+}
+
+
+
+.openSearch {
+    display: flex;
+}
+
+
